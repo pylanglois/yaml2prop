@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "y2p"
+version = '0.0.1'
+description = "Convert yaml file to dotted notation, object style."
+authors = ["Pierre-Yves Langlois"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/pylanglois/yaml2prop"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+plumbum = "*"
+
+[tool.poetry.scripts]
+cry = "y2p.cli:Y2P.run"
