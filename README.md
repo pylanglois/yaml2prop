@@ -12,7 +12,7 @@ my.yaml.file=hello
 ## install
 
 ```
-pip install https://github.com/pylanglois/yaml2prop
+pip install git+https://github.com/pylanglois/yaml2prop
 ```
 
 ## usage
