@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "y2p"
-version = '0.0.1'
+version = '0.0.2'
 description = "Convert yaml file to dotted notation, object style."
 authors = ["Pierre-Yves Langlois"]
 license = "MIT"
@@ -16,4 +16,4 @@ python = "^3.10"
 plumbum = "*"
 
 [tool.poetry.scripts]
-cry = "y2p.cli:Y2P.run"
+y2p = "y2p.cli:Y2P.run"
