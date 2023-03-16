@@ -2,6 +2,13 @@
 Convert yaml file to dotted notation, object style.  
 Used to convert java profile configuration from yaml to the more readable properties format.  
 
+ex:
+my:
+  yaml:
+    file: hello
+
+my.yaml.file=hello
+
 ## install
 
 ```
@@ -56,7 +63,13 @@ Options:
 y2p file ~/blabla/application.yml
 ```
 
+## string
+```
+y2p string "my:
+  yaml:
+    file: hello"
+```
 ## stdin
 ```
-cat  ~/blabla/application.yml | y2p stdin
+cat  ~/blabla/application.yml | y2p string --stdin
 ```
